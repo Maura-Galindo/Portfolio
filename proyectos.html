@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Proyecto Power BI - Análisis de Ventas</title>
+  <link href="https://app.powerbi.com/reportEmbed?reportId=897d669e-b19b-44f8-870b-92d26667a672&autoAuth=true&ctid=6ea70511-36ea-4596-a53e-f839674e2702" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER igual que el principal -->
+  <header class="header">
+    <h1>Maura Galindo</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html#about">Sobre mí</a></li>
+        <li><a href="index.html#projects">Proyectos</a></li>
+        <li><a href="index.html#skills">Habilidades</a></li>
+        <li><a href="index.html#certifications">Certificaciones</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN DEL PROYECTO -->
+  <section class="section projects" style="padding: 60px 10%;">
+    <div class="container" style="max-width: 900px; margin: auto;">
+
+      <!-- Título -->
+      <h2 class="section-title" style="color: var(--primary-color); margin-bottom: 40px;">Análisis de Ventas con Power BI</h2>
+
+      <!-- Visualización Power BI embebida -->
+      <div style="width: 100%; height: 500px; margin-bottom: 30px;">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://app.powerbi.com/view?r=tu-embed-link"
+          frameborder="0"
+          allowFullScreen="true"
+          title="Visualización Power BI - Análisis de Ventas"
+          style="border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);"
+        ></iframe>
+      </div>
+
+      <!-- Descripción -->
+      <p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.6; margin-bottom: 30px; text-align: justify;">
+        Este proyecto analiza las tendencias de ventas trimestrales usando Power BI. Se identificaron patrones estacionales y productos con mejor rendimiento para optimizar inventarios y campañas de marketing.
+      </p>
+
+      <!-- Hallazgos -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: var(--primary-color); margin-bottom: 10px;">Hallazgos Clave:</h3>
+        <ul style="color: var(--text-secondary); font-size: 1rem; line-height: 1.5; padding-left: 20px;">
+          <li>Las ventas aumentan un 25% en el último trimestre.</li>
+          <li>Producto A representa el 40% de los ingresos totales.</li>
+          <li>Campañas de marketing incrementan la retención en un 15%.</li>
+        </ul>
+      </div>
+
+      <!-- Íconos herramientas usadas -->
+      <div class="icons" style="justify-content: center; font-size: 2rem; gap: 25px; color: var(--primary-color);">
+        <i class="fab fa-microsoft" title="Power BI"></i>
+        <i class="fas fa-database" title="SQL"></i>
+        <i class="fas fa-file-excel" title="Excel"></i>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FontAwesome CDN para iconos -->
+  <script src="https://kit.fontawesome.com/a81368914c.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
