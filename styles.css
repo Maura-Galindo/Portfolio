@@ -768,6 +768,68 @@ body {
     align-self: center; /* Centra el botón */
     width: 80%; /* Ancho controlado */
 }
+/* Efecto borde animado */
+.projects-carousel .card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px; /* grosor del borde */
+    background: linear-gradient(45deg, #a009a5, #ff6b6b, #a009a5, #ff6b6b);
+    background-size: 400%;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    animation: animate-border 8s linear infinite;
+    pointer-events: none;
+}
+
+.projects-carousel .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+.projects-carousel .card:hover::after {
+    opacity: 1;
+}
+
+
+
+
+
+/* ===================== */
+/* ANIMACIÓN GRADIENTE */
+/* ===================== */
+@keyframes animate-border {
+    0% { background-position: 0 0; }
+    50% { background-position: 300% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .card-button:hover {
     background-color: var(--button-hover-color);
